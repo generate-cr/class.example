@@ -1,0 +1,7 @@
+<% config.modules.each_index do |index| %> <% module_name = config.module[index] %>
+<%= "  " * index %> <%= module_name %><% end %>
+<%= config.identation %>class <%= config.name %>
+<%= config.identation %>  # TODO: put your code here
+<%= config.identation %>end
+<% config.modules.each_index do |index| %> <% module_name = config.module[index] %>
+<%= "  " * (config.modules.count - index - 1) %>end<% end %>
